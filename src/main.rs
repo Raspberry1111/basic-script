@@ -4,6 +4,10 @@ use std::{
     io::{self, Read},
 };
 
+mod interpreter;
+mod lexer;
+mod parser;
+
 #[derive(Clone)]
 enum Instr {
     Invalid,
