@@ -1,25 +1,25 @@
-// var, func, and label references should not matter if caps or not
-// ; and line endings are functionally the same
-// curly braces work as anonymous functions without args except in tables
+//  var, func, and label references should not matter if caps or not
+//  ; and line endings are functionally the same
+//  curly braces work as anonymous functions without args except in tables
 
-// var types {var / let}
-// value types {string, num, bool}
-var <name> <optional: = <value>>
-var <name> <optional: = {<value>, <value>, <value>}>
+//  var types {var / let}
+//  value types {string, num, bool}
+//var <name> <optional: = <value>>
+//var <name> <optional: = {<value>, <value>, <value>}>
 
-// condition statements
-// data check methods {{<, >, <=, >=, ==}, !/*modifer*/}
-if <condition> {<content>}
-else {<content>}
+//  condition statements
+//  data check methods {{<, >, <=, >=, ==}, !/*modifer*/}
+//if <condition> {<content>}
+//else {<content>}
 
-goto <label>
-label <label>
+//goto <label>
+//label <label>
 
-func <name> <optional: expected_args>{<content>}
-<name> <optional: args comma inbetween>
-return <optional: value> // works as break because if/else is anonymous function
+//func <name> <optional: expected_args>{<content>}
+//<name> <optional: args comma inbetween>
+//return <optional: value> // works as break because if/else is anonymous function
 
-using <path> <name> // imports file as table, only imports what is used, would increase compile time
+//using <path> <name> // imports file as table, only imports what is used, would increase compile time
 
 using lib/std, std;
 var:string name = std/term/readln;
