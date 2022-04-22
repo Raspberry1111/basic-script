@@ -1,0 +1,87 @@
+IF <statement>; <block>
+LET <variable> = <expression>
+LABEL <label>
+GOTO <label>
+USE <path> <name>
+
+parrams/func_name/var = 1
+
+std/params/PRINT/0 = "Hello, "
+std/params/PRINT/1 = x
+std/params/PRINT/2 = "World !"
+
+std/params/PRINT = {
+    0 = "Hello, ",
+    1 = x,
+    2 = "World !";
+}
+
+// ~/my-lib
+
+USE lib2 ~/path
+
+/// EXPANDS TO
+
+LET lib2 = {}
+
+
+{
+	// Contents of path
+
+	lib2 = exports
+}
+
+
+
+LET lib2 = {
+	
+}
+
+LET gui = {
+	
+}
+
+FUNCTION gui_print { ... }
+gui/gui_print = gui_print;
+
+//
+USE lib ~/my-lib
+
+lib/nested 
+
+
+nested
+
+lib/gui/gui_print = gui_print;
+
+
+LIBRARY/draw
+
+FUNCTION __EXTERNAL__DRAW {}
+
+GOTO ASD
+LABEL FUNC
+PRINT HELLO_WORLD
+LABEL ASD
+
+PRINT "HELLO WORLD"
+
+my_table/FUNC = MY_FUNC
+
+FUNCTION MY_FUNC {
+	PRINT { ARGUMENTS/0 }
+	PRINT "Hello World";
+	SET 
+}
+
+FUNCTION __EXTERNAL__PRINT {}
+
+GOTO MY_FUNC_RET
+LABEL MY_FUNC {
+	y = GET FN_INPUT, "x";
+	x = 3;
+	3
+}
+LABEL MY_FUNC_RET
+
+z = GOTO MY_FUNC;
